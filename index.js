@@ -10,7 +10,10 @@ function createUser(userName, userAge, userEmail, userPassword) {
         name: userName,
         age: userAge,
         email: userEmail,
-        password: userPassword
     }
     return user;
 }
+
+document.getElementById("user-name").innerHTML = createUser(userName, userAge, userEmail, userPassword).name;
+document.getElementById("user-age").innerHTML = createUser(userName, userAge, userEmail, userPassword).age;
+document.getElementById("user-email").innerHTML = createUser(userName, userAge, userEmail, userPassword).email;
